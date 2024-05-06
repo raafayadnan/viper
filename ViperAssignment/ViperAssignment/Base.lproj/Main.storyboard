@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="ViperAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BvH-5H-def">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dataList" id="2Gy-T3-hrt" customClass="ListTableCell" customModule="ViperAssignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="85.666664123535156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Gy-T3-hrt" id="dif-3B-IqE">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="85.666664123535156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="University Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjK-xj-K8g">
+                                                    <rect key="frame" x="16" y="16" width="131" height="20.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx0-da-bpZ">
+                                                    <rect key="frame" x="15.999999999999993" y="48.666666666666664" width="120.33333333333331" height="20.999999999999993"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rH4-Ph-Mtc">
+                                                    <rect key="frame" x="353" y="16" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="rH4-Ph-Mtc" secondAttribute="height" multiplier="1:1" id="MQ0-NR-Rgo"/>
+                                                    </constraints>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="Arrow-Icon">
+                                                        <color key="titleColor" systemColor="linkColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hx0-da-bpZ" firstAttribute="top" secondItem="DjK-xj-K8g" secondAttribute="bottom" constant="12" id="AB2-2H-qiN"/>
+                                                <constraint firstAttribute="trailing" secondItem="rH4-Ph-Mtc" secondAttribute="trailing" constant="16" id="ABS-Kk-ZRA"/>
+                                                <constraint firstItem="hx0-da-bpZ" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="DjK-xj-K8g" secondAttribute="trailing" id="UYc-Hr-0rt"/>
+                                                <constraint firstAttribute="bottom" secondItem="hx0-da-bpZ" secondAttribute="bottom" constant="16" id="d6w-KG-GzH"/>
+                                                <constraint firstItem="DjK-xj-K8g" firstAttribute="leading" secondItem="dif-3B-IqE" secondAttribute="leading" constant="16" id="f2C-K9-wXe"/>
+                                                <constraint firstItem="rH4-Ph-Mtc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DjK-xj-K8g" secondAttribute="trailing" constant="16" id="l5D-aT-VkT"/>
+                                                <constraint firstItem="rH4-Ph-Mtc" firstAttribute="top" secondItem="DjK-xj-K8g" secondAttribute="top" id="mxW-xx-jzV"/>
+                                                <constraint firstItem="hx0-da-bpZ" firstAttribute="leading" secondItem="DjK-xj-K8g" secondAttribute="leading" id="xjd-7f-lq0"/>
+                                                <constraint firstItem="DjK-xj-K8g" firstAttribute="top" secondItem="dif-3B-IqE" secondAttribute="top" constant="16" id="y77-bh-kI0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="universityName" destination="DjK-xj-K8g" id="8vr-SR-yr3"/>
+                                            <outlet property="universityState" destination="hx0-da-bpZ" id="3g7-Vr-oxZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BvH-5H-def" secondAttribute="bottom" id="Yq3-DU-o4Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BvH-5H-def" secondAttribute="trailing" id="lhR-HV-iVm"/>
+                            <constraint firstItem="BvH-5H-def" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lkc-Jd-dEg"/>
+                            <constraint firstItem="BvH-5H-def" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xZN-Kw-lv5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="BvH-5H-def" id="li6-L7-dq0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.2900763358778624" y="3.5211267605633805"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="QDV-th-s6b">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sjT-VZ-6o9" customClass="DetailViewController" customModule="ViperAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jjf-zu-9qZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06q-a0-ksb">
+                                <rect key="frame" x="353" y="75" width="24" height="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="Reload-Icon">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshButtonTapped:" destination="sjT-VZ-6o9" eventType="touchUpInside" id="PM2-iB-UY4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="University Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="064-Fb-AaN">
+                                <rect key="frame" x="16" y="121" width="131" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6il-kn-nQA">
+                                <rect key="frame" x="21.333333333333336" y="153.33333333333334" width="120.33333333333331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cID-ds-Kal">
+                                <rect key="frame" x="21.333333333333336" y="186.33333333333334" width="120.33333333333331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ix0-s8-u4e">
+                                <rect key="frame" x="21.333333333333336" y="219.33333333333334" width="120.33333333333331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWl-gK-1bT">
+                                <rect key="frame" x="271" y="186.33333333333334" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yr3-gJ-ykG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6il-kn-nQA" firstAttribute="top" secondItem="064-Fb-AaN" secondAttribute="bottom" constant="12" id="47C-gI-XAp"/>
+                            <constraint firstItem="Ix0-s8-u4e" firstAttribute="top" secondItem="cID-ds-Kal" secondAttribute="bottom" constant="12" id="BbG-sA-Mng"/>
+                            <constraint firstItem="cID-ds-Kal" firstAttribute="top" secondItem="6il-kn-nQA" secondAttribute="bottom" constant="12" id="HLY-Mj-W0e"/>
+                            <constraint firstItem="064-Fb-AaN" firstAttribute="leading" secondItem="yr3-gJ-ykG" secondAttribute="leading" constant="16" id="L1K-uW-jJ6"/>
+                            <constraint firstItem="064-Fb-AaN" firstAttribute="top" secondItem="06q-a0-ksb" secondAttribute="bottom" constant="22" id="PSY-nt-8jG"/>
+                            <constraint firstItem="cID-ds-Kal" firstAttribute="leading" secondItem="6il-kn-nQA" secondAttribute="leading" id="Y02-DV-0EU"/>
+                            <constraint firstItem="cID-ds-Kal" firstAttribute="trailing" secondItem="6il-kn-nQA" secondAttribute="trailing" id="hTa-iG-DTf"/>
+                            <constraint firstItem="SWl-gK-1bT" firstAttribute="centerY" secondItem="cID-ds-Kal" secondAttribute="centerY" id="hxh-Q1-hsD"/>
+                            <constraint firstItem="yr3-gJ-ykG" firstAttribute="trailing" secondItem="06q-a0-ksb" secondAttribute="trailing" constant="16" id="i7x-A5-wvw"/>
+                            <constraint firstItem="06q-a0-ksb" firstAttribute="top" secondItem="yr3-gJ-ykG" secondAttribute="top" constant="16" id="mnm-9B-Pn9"/>
+                            <constraint firstItem="yr3-gJ-ykG" firstAttribute="trailing" secondItem="SWl-gK-1bT" secondAttribute="trailing" constant="16" id="nYf-Ry-SZA"/>
+                            <constraint firstItem="Ix0-s8-u4e" firstAttribute="leading" secondItem="cID-ds-Kal" secondAttribute="leading" id="pHa-xc-dmw"/>
+                            <constraint firstItem="SWl-gK-1bT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="064-Fb-AaN" secondAttribute="trailing" constant="10" id="qxj-dB-nH2"/>
+                            <constraint firstItem="Ix0-s8-u4e" firstAttribute="trailing" secondItem="cID-ds-Kal" secondAttribute="trailing" id="rwu-nH-nQS"/>
+                            <constraint firstItem="6il-kn-nQA" firstAttribute="centerX" secondItem="064-Fb-AaN" secondAttribute="centerX" id="yg8-qM-o5e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="country" destination="cID-ds-Kal" id="mwe-BB-tVb"/>
+                        <outlet property="countryCode" destination="SWl-gK-1bT" id="eJ9-Tf-ewA"/>
+                        <outlet property="refreshButton" destination="06q-a0-ksb" id="HPV-We-h3J"/>
+                        <outlet property="universityName" destination="064-Fb-AaN" id="3wa-0D-44O"/>
+                        <outlet property="universityState" destination="6il-kn-nQA" id="cAL-ie-CKK"/>
+                        <outlet property="webPage" destination="Ix0-s8-u4e" id="gcZ-EE-CxY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ObL-nu-OZN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arrow-Icon" width="24" height="24"/>
+        <image name="Reload-Icon" width="24" height="24"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
